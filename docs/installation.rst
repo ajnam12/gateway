@@ -70,8 +70,8 @@ Use the Metagov app by importing it from core:
     community = metagov.get_community("metagov_slug")
 
     community.enable_plugin(
-        name="opencollective",
-        config={"collective_slug": "mycollective", api_key": "XYZ"}
+        plugin_name="opencollective",
+        plugin_config={"collective_slug": "mycollective", api_key": "XYZ"}
     )
     metagov_community.perform_action(plugin_name="opencollective", action_id="process-expense")
 
